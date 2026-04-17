@@ -41,6 +41,22 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
       >
+        {/* Circular DP with Gradient */}
+        <motion.div
+          variants={itemVariants}
+          className="mb-8 flex justify-center"
+        >
+          <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-r from-primary via-secondary to-primary p-1">
+            <div className="w-full h-full rounded-full bg-dark overflow-hidden">
+              <img
+                src="/dist/assets/dp.png"
+                alt="Profile Picture"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
+          </div>
+        </motion.div>
+
         {/* Main Heading */}
         <motion.div variants={itemVariants}>
           <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">

@@ -1,0 +1,14 @@
+# Robots.txt for Yogendra Meena Portfolio
+User-agent: *
+Allow: /
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /*.json
+Disallow: /*?*
+Allow: /?*
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://yogendrameena.vercel.app/sitemap.xml
