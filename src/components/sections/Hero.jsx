@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-r from-primary via-secondary to-primary p-1">
             <div className="w-full h-full rounded-full bg-dark overflow-hidden">
               <img
-                src="/dist/assets/dp.png"
+                src="/dp.png"
                 alt="Profile Picture"
                 className="w-full h-full object-cover rounded-full"
               />
