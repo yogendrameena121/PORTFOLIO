@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex gap-6">
             {[
               { label: 'GitHub', href: 'https://github.com/yogendra121y' },
-
+              { label: 'Resume', href: 'https://drive.google.com/file/d/1bcezXM50B35Asacd_eAQYLbTlJ53ZZ7e/view?usp=sharing' },
               { label: 'LinkedIn', href: 'https://linkedin.com/in/yogendra-meena' },
               { label: 'Email', href: 'mailto:meenayogendra398@gmail.com' }
             ].map((link) => (

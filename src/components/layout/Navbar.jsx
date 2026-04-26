@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const resumeUrl = 'https://drive.google.com/file/d/1bcezXM50B35Asacd_eAQYLbTlJ53ZZ7e/view?usp=sharing'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,15 +59,27 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <motion.a
-            href="mailto:meenayogendra398@gmail.com"
-            className="hidden md:block px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary text-dark font-semibold text-sm hover:shadow-glow transition-all"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get in Touch
-          </motion.a>
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-3">
+            <motion.a
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 rounded-lg border border-primary/50 text-primary font-semibold text-sm hover:bg-primary/10 transition-all"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Resume
+            </motion.a>
+            <motion.a
+              href="mailto:meenayogendra398@gmail.com"
+              className="px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary text-dark font-semibold text-sm hover:shadow-glow transition-all"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get in Touch
+            </motion.a>
+          </div>
 
           {/* Mobile Menu Button */}
           <motion.button
@@ -100,6 +113,16 @@ export default function Navbar() {
                 {item}
               </motion.button>
             ))}
+            <motion.a
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-lg border border-primary/50 text-primary font-semibold text-sm text-center"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              Resume
+            </motion.a>
             <motion.a
               href="mailto:meenayogendra398@gmail.com"
               className="px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary text-dark font-semibold text-sm text-center mt-2"
