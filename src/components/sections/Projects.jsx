@@ -12,7 +12,7 @@ export default function Projects() {
       accentColor: 'from-primary to-primary/50',
       accentGlow: 'glow',
       links: [
-        { label: 'Live Demo', icon: ExternalLink, href: '#' },
+        { label: 'Live Demo', icon: ExternalLink, href: 'https://vigil-dap.web.app' },
         { label: 'GitHub', icon: Github, href: 'https://github.com/yogendrameena121/Assetshield.git' },
       ],
     },
